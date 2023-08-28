@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(221, 230, 237);
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: xx-large;
+    color: rgb(39, 55, 77);
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu > p {
+    font-size: large;
+    color: rgb(82, 109, 130);
+    display: flex;
+    justify-content: center;
+}
+
+.question { 
+    padding-left: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.question > p {
+    font-size: medium;
+    color: rgb(39, 55, 77);
+    font-weight: bold;
+}
+
+.options {
+    font-size: medium;
+    color: rgb(39, 55, 77);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(157, 178, 191);
+    color: rgb(39, 55, 77);
+    font-weight: bolder;
+    width: 70px;
+    height: 30px;
+}
+
+.result {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.result > h2 {
+    font-size: x-large;
+    color: rgb(39, 55, 77);
+    display: flex;
+    justify-content: center;
+}
+
+.result > p {
+    font-size: medium;
+    color: rgb(39, 55, 77);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
