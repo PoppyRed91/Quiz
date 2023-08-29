@@ -68,6 +68,16 @@ function clickOnNext() {
     console.clear();
     console.log("You are fit for: " + result);
 
+    let resultDiv = document.querySelector(".result")
+    let resultText = document.createElement("h2")
+    let resultDescription = document.createElement("p")
+    resultText.textContent = "You are a perfect fit for " + result
+    resultDiv.append(resultText)
+    resultDescription.textContent= "Description of the company"
+    resultDiv.append(resultDescription)
+
+    
+    
 }
 
 
