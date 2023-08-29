@@ -100,37 +100,37 @@ function clickOnNext() {
     switch(result) {
         case "freelance":
             resultDescription.textContent= companyDescriptions.freelanceDescription;
-            resultImage.src = "https://raw.githubusercontent.com/PoppyRed91/Quiz/main/images/freelance.jpg";
+            resultImage.src = "images/freelance.jpg";
             resultDiv.append(resultImage);
             resultDiv.append(resultDescription);
             break;
         case "government":
             resultDescription.textContent= companyDescriptions.governmentDescription;
-            resultImage.src = "https://raw.githubusercontent.com/PoppyRed91/Quiz/main/images/government.jpg";
+            resultImage.src = "images/government.jpg";
             resultDiv.append(resultImage);
             resultDiv.append(resultDescription);
             break;
         case "bigCorporation":
             resultDescription.textContent= companyDescriptions.bigCorporationDescription;
-            resultImage.src = "https://raw.githubusercontent.com/PoppyRed91/Quiz/main/images/bigcorporation.jpg";
+            resultImage.src = "images/bigcorporation.jpg";
             resultDiv.append(resultImage);
             resultDiv.append(resultDescription);
             break;
         case "startup":
             resultDescription.textContent= companyDescriptions.startupDescription;
-            resultImage.src = "https://raw.githubusercontent.com/PoppyRed91/Quiz/main/images/startup.jpg";
+            resultImage.src = "images/startup.jpg";
             resultDiv.append(resultImage);
             resultDiv.append(resultDescription);
             break;
         case "nonProfit":
             resultDescription.textContent= companyDescriptions.nonProfitDescription;
-            resultImage.src = "https://raw.githubusercontent.com/PoppyRed91/Quiz/main/images/nonprofit.jpg";
+            resultImage.src = "images/nonprofit.jpg";
             resultDiv.append(resultImage);
             resultDiv.append(resultDescription);
             break;
         case "consultant":
             resultDescription.textContent= companyDescriptions.consultantDescription;
-            resultImage.src = "https://raw.githubusercontent.com/PoppyRed91/Quiz/main/images/consulting.jpg";
+            resultImage.src = "images/consulting.jpg";
             resultDiv.append(resultImage);
             resultDiv.append(resultDescription);
             break;
