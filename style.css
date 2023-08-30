@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(221, 230, 237);
+    background-color: #272727;
     margin: 0;
     padding: 0;
 }
@@ -10,16 +10,20 @@ body {
 
 h1 {
     font-size: xx-large;
-    color: rgb(39, 55, 77);
+    color: white;
     display: flex;
     justify-content: center;
 }
 
 .main-menu > p {
     font-size: large;
-    color: rgb(82, 109, 130);
+    color: white;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
 }
 
 .question { 
@@ -31,13 +35,14 @@ h1 {
 
 .question > p {
     font-size: medium;
-    color: rgb(39, 55, 77);
+    color: white;
     font-weight: bold;
 }
 
 .options {
     font-size: medium;
-    color: rgb(39, 55, 77);
+    color: white;
+    padding-left: 10px;
 }
 
 .button {
@@ -52,11 +57,13 @@ h1 {
     margin-top: 5%;
     border-radius: 15px;
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(157, 178, 191);
+    background-color: #4285F4;
     color: rgb(39, 55, 77);
     font-weight: bolder;
-    width: 10%;
-    height: 15%;
+    width: 200px;
+    height: 30px;
+    border: none;
+
 }
 
 .result {
@@ -70,7 +77,7 @@ h1 {
 
 .result > h2 {
     font-size: x-large;
-    color: rgb(39, 55, 77);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +85,7 @@ h1 {
 
 .result > p {
     font-size: medium;
-    color: rgb(39, 55, 77);
+    color: white;
     display: flex;
     justify-content: center;
     padding-top: 5%;
@@ -91,3 +98,14 @@ h1 {
     width: 40% !important;
 }
 
+#refresher > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    color: white;
+    padding-top: 7px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}

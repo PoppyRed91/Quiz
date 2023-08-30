@@ -1,5 +1,5 @@
 const companyDescriptions = {
-    freelanceDescription : "Freelance! \n Working as a freelance front-end developer demands dedication and continuous growth. \n Enhancing technical prowess, honing soft skills, and adeptly managing your freelance enterprise play pivotal roles in achieving success. \n While freelancing offers independence, learning prospects, and earning potential, \n it does present hurdles like income uncertainty, client dynamics, and administrative duties. \n The decision to freelance depends on factors such as your personality, lifestyle choices, risk tolerance and \n career aspirations.",
+    freelanceDescription : "Freelance! Working as a freelance front-end developer demands dedication and continuous growth. \n Enhancing technical prowess, honing soft skills, and adeptly managing your freelance enterprise play pivotal roles in achieving success. \n While freelancing offers independence, learning prospects, and earning potential, \n it does present hurdles like income uncertainty, client dynamics, and administrative duties. \n The decision to freelance depends on factors such as your personality, lifestyle choices, risk tolerance and \n career aspirations.",
     governmentDescription : "A government company!\n Working as a front-end developer at a government agency in Sweden offers stability, \n impactful work, and skill development, but it could involve dealing with bureaucracy, limited flexibility, and potential slower career advancement \n compared to the private sector. The decision depends on factors as your preferences \n for job security, societal contribution, and the working environment.",
     bigCorporationDescription : "Big corporation!\n Working as a front-end developer in a big tech corporation provides access to top \n resources, innovative projects, and significant learning opportunities. However, you might encounter bureaucracy, specialization, \n and potential work-life balance issues. Deciding to work in a big tech corporation depends on your \n career goals, preference for stability and resources, and your ability to navigate \n a larger organizational setting.",
     startupDescription : "A startup!\n Working as a front-end developer in a startup offers exciting learning experiences, a chance \n to make a significant impact, and opportunities for growth. However, the downsides include instability, potential long hours, \n resource limitations, and uncertain compensation. Deciding to work for a startup often depends on your \n risk tolerance, career goals, and personal preferences for work environment and challenges. \n Be prepared to do a lot of other tasks not connected to your profession!",
@@ -7,8 +7,15 @@ const companyDescriptions = {
     consultantDescription : "A consultant company!\n Working as a front-end developer in a consulting firm offers exposure to diverse projects, \n skill growth, networking opportunities, and exposure to best practices. However, challenges include adapting to client variations, \n potential work-life balance struggles, and the pressure of meeting client expectations. Deciding to \n work in a consulting firm depends on your adaptability, preference for variety, \n and your ability to handle fast-paced environments.",   
 }
 
+//const refreshPage = {
+//    refresh: "If you want to take the survey again, please refresh the page!"
+//}
+
+let isQuizDone = false;
 
 function clickOnNext() {
+    if (isQuizDone) return;
+    
     let position = {
         freelance: 0,
         government: 0,
@@ -90,9 +97,11 @@ function clickOnNext() {
     resultDescription.style.justifyContent = "center"
     resultDescription.style.alignItems = "center"
     resultDescription.style.fontSize = "large"
+    resultDescription.style.color = "white"
     resultDescription.style.paddingTop = "50px"
     resultDescription.style.paddingLeft = "10%"
     resultDescription.style.paddingRight = "10%"
+    resultDescription.style.paddingBottom = "10px"
     
     // switch case // 
     resultImage = document.createElement("img")
@@ -137,6 +146,16 @@ function clickOnNext() {
         default:
             resultDescription.textContent = "Maybe you really are Sid and don't know what you want yet. Good luck!";
     }
+
+    let refresher = document.getElementById("refresher");
+    let refreshText = document.createElement("p");
+    refreshText.textContent = "Refresh the page to try again!";
+    refreshText.setAttribute("id", "refreshText");
+    refresher.append(refreshText);
+
+    isQuizDone = true;
+
+    
 }
 
 
